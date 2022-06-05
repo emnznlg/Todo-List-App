@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(120deg, #e2c35d, #d88771);
+  min-height: 100vh;
+  color: #fff;
+  padding: 2rem;
+}
+
+header {
+  font-size: 1.5rem;
+}
+
+header,
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 20vh;
+}
+
+form input,
+form button {
+  background-color: #fff;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  color: #333;
+}
+
+form button {
+  color: #d88771;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+form button:hover {
+  color: #fff;
+  background-color: #d88771;
+}
+
+.todo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-container .todo-list {
+  list-style-type: none;
+  min-width: 50%;
+}
+
+.todo-div {
+  margin: 0.5rem;
+  background-color: #fff;
+  color: #333;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: all 0.5s ease;
+}
+
+.todo-item {
+  flex: 1;
+  padding: 0 0.5rem;
+}
+
+.btn {
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.delete-btn {
+  background-color: #f54616;
+}
+
+.delete-btn:hover {
+  background-color: #f5643c;
+}
+
+.completed-btn {
+  background-color: #8ac926;
+}
+
+.completed-btn:hover {
+  background-color: #a3c46f;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.completed {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.fall-animation {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
+
+.filter {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.todo-filter {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  outline: none;
+  color: #f5643c;
+  width: 10rem;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.filter-icon {
+  position: absolute;
+  top: -0.2rem;
+  right: 0;
+  color: #333;
+  pointer-events: none;
+  padding: 1rem;
+  height: 100%;
+}
+
+.fa-angle-down {
+  font-size: 1.3rem;
+  color: #d88771;
+}
